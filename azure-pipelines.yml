@@ -24,5 +24,5 @@ steps:
     contents: '**/*''
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    pathtoPublish:'$(Build.ArtifactStagingDirectory)'
     artifactName: 'xml'
