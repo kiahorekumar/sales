@@ -20,9 +20,9 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: '**\*'
-    targetFolder: $(Build.ArtifactStagingDirectory)
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/*''
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(Build.ArtifactStagingDirectory)
-    artifactName: 'xml'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: drop
