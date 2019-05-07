@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    Contents: '''**/*'''
+    ArtifactName: '''xml'''
+    ArtifactType: 'Container'
 # https://aka.ms/yaml
 
 trigger:
