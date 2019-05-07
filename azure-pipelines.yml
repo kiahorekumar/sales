@@ -21,7 +21,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     contents: '**\*'
-    sourceFolder: '$(Build.SourcesDirectory)'
+    targetFolder: $(Build.ArtifactStagingDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: $(Build.ArtifactStagingDirectory)
