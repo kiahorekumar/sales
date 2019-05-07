@@ -36,5 +36,5 @@ steps:
   displayName: 'Run Code Analysis'
 - task: PublishCodeCoverageResults@1
   inputs:
-    summaryFileLocation: 'coverage'
+    summaryFileLocation: '**/*'
     failIfCoverageEmpty: true
