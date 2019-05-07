@@ -1,4 +1,11 @@
-
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: '188ae9a7-5384-42b0-b181-9c300543a1ae'
+    organization: 'gorla-kishore-mas62580'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'sales'
+    cliProjectName: 'sales'
 # https://aka.ms/yaml
 
 trigger:
