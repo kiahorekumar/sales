@@ -23,15 +23,4 @@ steps:
     pathtoPublish: $(Build.ArtifactStagingDirectory)
     artifactName: 'xml'
 
-- task: SonarCloudPrepare@1
-  inputs:
-    SonarCloud: '188ae9a7-5384-42b0-b181-9c300543a1ae'
-    organization: 'gorla-kishore-mas62580'
-    scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'sales'
-    cliProjectName: 'sales'
-  
-- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
-  displayName: 'Run Code Analysis'
 
